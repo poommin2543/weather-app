@@ -45,7 +45,7 @@ export default function WeatherPage() {
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
 
-  const getPm25Status = (pm25) => {
+  const getPm25Status = (pm25:number) => {
     if (pm25 <= 25) return { color: "text-blue-500", message: "อากาศดีมาก ทำกิจกรรมได้ปกติ" };
     if (pm25 <= 37) return { color: "text-green-500", message: "อากาศดี กลุ่มเสี่ยงต้องเฝ้าระวังตัว" };
     if (pm25 <= 50) return { color: "text-yellow-500", message: "อากาศปานกลาง หลีกเลี่ยงกิจกรรมกลางแจ้ง" };
