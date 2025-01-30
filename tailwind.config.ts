@@ -28,9 +28,7 @@ export default {
       animation: {
         slide: 'slide 10s infinite linear'
       },
-      boxShadow: {
-        'text-glow': '0 0 8px rgba(255, 73, 219, 0.6)',
-      },
+      
     },
   },
   plugins: [],
