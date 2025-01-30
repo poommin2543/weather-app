@@ -21,7 +21,7 @@ export default function WeatherPage() {
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        const response = await axios.get("http://45.144.164.245:3000/weather");
+        const response = await axios.get("https://apiweather.roverautonomous.com/");
         setWeatherData(response.data); // Assign the API response to state
         setLoading(false);
       } catch (err) {
